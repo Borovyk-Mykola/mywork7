@@ -21,12 +21,12 @@
  .section-tools__li {
      display: block;
      width: calc((100% - 90px) / 4);
- }
 
- .section-tools__li:not(:last-child) {
-     margin-right: 30px;
+     &:not(:last-child) {
+        margin-right: 30px;
+    }
  }
-
+ 
  .section-tools__text {
      line-height: 24px;
  }

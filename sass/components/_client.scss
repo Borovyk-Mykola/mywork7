@@ -15,17 +15,16 @@
     margin-right: 30px;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.section-client__li:hover,
-.section-client__li:focus {
-    cursor: pointer;
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
-}
+    &:hover, &:focus {
+        cursor: pointer;
+        border-color: var(--accent-color);
+        fill: var(--accent-color);
+    }
 
-.section-client__li:last-child {
-    margin-right: 0;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .section-client__ul {

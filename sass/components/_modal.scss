@@ -54,11 +54,11 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--primery-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal__close:hover {
-    cursor: pointer;
-    fill: var(--accent-color);
+    &:hover {
+        cursor: pointer;
+        fill: var(--accent-color);
+    }
 }
 
 .modal__title {
@@ -77,10 +77,10 @@
     margin-bottom: 28px;
     display: flex;
     justify-content: center;
-}
 
-.modal__li:last-child {
-    margin-bottom: 0;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .modal__input {
@@ -90,6 +90,12 @@
     border-radius: 4px;
     padding-left: 42px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus, &:hover {
+        outline: none;
+        border-color: var(--accent-color);
+        cursor: pointer;
+    }
 }
 
 .modal__svg {
@@ -104,7 +110,7 @@
     margin-bottom: 4px;
 }
 
-.modal_input--comment {
+.modal__input--comment {
     height: 120px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -149,13 +155,6 @@
 label:focus-within .modal__svg,
 label:hover {
     fill: var(--accent-color);
-    cursor: pointer;
-}
-
-.modal__input:focus,
-.modal__input:hover {
-    outline: none;
-    border-color: var(--accent-color);
     cursor: pointer;
 }
 

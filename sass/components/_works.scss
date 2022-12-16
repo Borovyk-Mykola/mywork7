@@ -10,12 +10,12 @@
     align-items: center;
 }
 
-.section-works__li:not(:last-child) {
-    margin-right: 30px;
-}
-
 .section-works__li {
     position: relative;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .section-works__title {
